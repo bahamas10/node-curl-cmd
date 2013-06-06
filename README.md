@@ -46,6 +46,27 @@ HEADERS: {"date":"Thu, 06 Jun 2013 16:56:30 GMT","server":"Apache","vary":"Accep
 BODY: 8.8.8.8
 ```
 
+### Simple Example
+
+``` js
+> var curl = require('curl-cmd')
+undefined
+
+> curl.cmd('http://www.daveeddy.com/something')
+'curl -X GET http://www.daveeddy.com/something'
+
+> curl.cmd({host: 'daveeddy.com', port: 8080, method: 'DELETE', path: '/data/something'})
+'curl -X DELETE http://daveeddy.com:8080/data/something'
+
+> curl.cmd({host: 'daveeddy.com', port: 8080, method: 'DELETE', path: '/data/something', headers: { 'User-Agent': 'Internet Explorer'} })
+'curl -X DELETE -H \'User-Agent: Internet Explorer\' http://daveeddy.com:8080/data/something'
+
+> curl.cmd({host: 'daveeddy.com', port: 8080, method: 'DELETE', path: '/data/something', headers: { 'User-Agent': 'Internet Explorer'}, auth: 'dave:secret' })
+'curl -X DELETE -u dave:secret -H \'User-Agent: Internet Explorer\' http://daveeddy.com:8080/data/something'
+
+> curl.cmd({host: 'daveeddy.com', port: 8080, method: 'PUT', path: '/data/something', headers: { 'User-Agent': 'Internet Explorer'}, auth: 'dave:secret' }, {ssl: true, verbose: true})
+'curl -X PUT -u dave:secret -H \'User-Agent: Internet Explorer\' -v https://daveeddy.com:8080/data/something'
+```
 Usage
 -----
 
