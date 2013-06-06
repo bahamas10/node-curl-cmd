@@ -15,7 +15,7 @@ Taken from the [Node.JS](http://nodejs.org) example for an HTTP get request
 
 ``` js
 var http = require('http');
-var curl = require('curlcmd');
+var curl = require('curl-cmd');
 
 var options = {
   hostname: 'ifconfig.me',
