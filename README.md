@@ -43,7 +43,7 @@ the curl command seen in the output
 => curl -X GET http://ifconfig.me:80/ip
 STATUS: 200
 HEADERS: {"date":"Thu, 06 Jun 2013 16:56:30 GMT","server":"Apache","vary":"Accept-Encoding","connection":"close","transfer-encoding":"chunked","content-type":"text/plain"}
-BODY: 76.180.35.49
+BODY: 8.8.8.8
 ```
 
 Usage
