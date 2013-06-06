@@ -1,0 +1,15 @@
+{
+  "name": "curl-cmd",
+  "version": "0.0.0",
+  "description": "Generate a curl command line argument list from an http request object",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "main": "./curl-cmd.js",
+  "scripts": {
+    "test": "for f in test/*; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo Passed; exit 0"
+  },
+  "repository": "git://github.com/bahamas10/node-curl-cmd.git",
+  "license": "MIT",
+  "dependencies": {
+    "shell-escape": "0.0.0"
+  }
+}
