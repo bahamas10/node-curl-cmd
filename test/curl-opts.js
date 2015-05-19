@@ -19,5 +19,5 @@ var u = curl.args(o, curlopts);
 var s = curl.cmd(o, curlopts);
 
 assert.deepEqual(u, [ 'curl', '-X', 'GET', '-v', '-i', '--data', 'test', 'http://www.daveeddy.com:80/' ]);
-assert.deepEqual(s, 'curl -X GET -v -i --data test http://www.daveeddy.com:80/');
+assert.deepEqual(s, "curl -X GET -v -i --data test 'http://www.daveeddy.com:80/'");
 console.log(s);
