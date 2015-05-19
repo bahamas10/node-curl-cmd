@@ -1,6 +1,6 @@
 {
   "name": "curl-cmd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate a curl command line argument list from an http request object",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "main": "./curl-cmd.js",
